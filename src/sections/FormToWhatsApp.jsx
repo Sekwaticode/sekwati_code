@@ -39,7 +39,11 @@ const FormToWhatsApp = () => {
         className="bg-gradient-to-b from-white to-[#B18197] py-24 overflow-x-clip"
       >
         <h2 className="section-title">Contact us Now</h2>
-
+        <p className="section-description mt-5">
+          Let us know what you’re looking for, and our expert team will bring
+          your vision to life. Don’t wait—reach out today and let’s create a
+          solution that elevates your brand and drives results!
+        </p>
         <form action="https://api.web3forms.com/submit" method="POST">
           <input
             type="hidden"

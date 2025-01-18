@@ -16,7 +16,7 @@ export const Footer = () => {
     >
       <div className="container">
         <div className="inline-flex relative before:content-[''] before:top-2 before:bottom-0 before:w-full before:blur before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:absolute">
-          <Image src={logo} height={40} alt="SaaS logo" className="relative" />
+          <Image src={logo} height={40} alt=" logo" className="relative" />
         </div>
         <nav className="flex flex-col md:flex-row md:justify-center gap-6 mt-6">
           <a
