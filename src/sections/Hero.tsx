@@ -24,6 +24,7 @@ export const Hero = () => {
     <section
       ref={heroRef}
       className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#630330,#EAEEFE_100%)] overflow-x-clip"
+      id="Home"
     >
       <div className="container">
         <div className="md:flex items-center">
@@ -37,9 +38,21 @@ export const Hero = () => {
               attention to detail and care about your business
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary "> Contact Now! </button>
+              <a
+                href="#Contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.querySelector("#Contact");
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
+              >
+                Contact Now!
+              </a>{" "}
               <button className="btn btn-text gap-1">
-                <span>Learn more</span>
+                <a href="#About">Learn more</a>
                 <ArrowIcon className="h-5 w-5" />
               </button>
             </div>

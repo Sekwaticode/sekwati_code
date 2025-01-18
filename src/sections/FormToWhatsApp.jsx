@@ -1,6 +1,7 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
+import ArrowRight from "@/assets/arrow-right.svg";
 
 const FormToWhatsApp = () => {
   const [formData, setFormData] = useState({
@@ -29,61 +30,81 @@ const FormToWhatsApp = () => {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}>
-      <form>
-        <div style={{ marginBottom: "15px" }}>
-          <label htmlFor="name">Name:</label>
-          <br />
+    <section
+      className="bg-gradient-to-b from-white to-[#B18197] py-24 overflow-x-clip"
+      id="Contact"
+    >
+      <div
+        style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}
+        className="bg-gradient-to-b from-white to-[#B18197] py-24 overflow-x-clip"
+      >
+        <h2 className="section-title">Contact us Now</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
           <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", padding: "8px" }}
+            type="hidden"
+            name="access_key"
+            value="568cac2c-b74a-4c70-a437-a31c4e11eed3"
           />
-        </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label htmlFor="email">Email:</label>
-          <br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", padding: "8px" }}
-          />
-        </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label htmlFor="message">Message:</label>
-          <br />
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            style={{ width: "100%", padding: "8px", height: "100px" }}
-          />
-        </div>
-        <button
-          type="button"
-          onClick={handleSubmit}
-          style={{
-            backgroundColor: "#25D366",
-            color: "white",
-            border: "none",
-            padding: "10px 15px",
-            cursor: "pointer",
-          }}
-        >
-          Send to WhatsApp
-        </button>
-      </form>
-    </div>
+
+          <div style={{ marginBottom: "15px" }}>
+            <label htmlFor="name" className="tag">
+              Name:
+            </label>
+            <br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              style={{ width: "100%", padding: "8px" }}
+            />
+          </div>
+          <div style={{ marginBottom: "15px" }}>
+            <label htmlFor="email" className="tag">
+              Email:
+            </label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              style={{ width: "100%", padding: "8px" }}
+            />
+          </div>
+          <div style={{ marginBottom: "15px" }}>
+            <label htmlFor="message" className="tag">
+              Message:
+            </label>
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              style={{ width: "100%", padding: "8px", height: "100px" }}
+            />
+          </div>
+          <button
+            type="button"
+            onClick={handleSubmit}
+            className="btn btn-primary"
+          >
+            Send to WhatsApp
+          </button>
+          <button type="submit" className="btn btn-primary bg-white text-black">
+            Submit Form
+            <ArrowRight className="h-5 w-5" />
+          </button>
+        </form>
+      </div>
+    </section>
   );
 };
 

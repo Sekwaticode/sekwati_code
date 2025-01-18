@@ -102,7 +102,9 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white"
+    id="Pricing"
+    >
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title">
@@ -169,14 +171,23 @@ export const Pricing = () => {
                     /month
                   </span> */}
                 </div>
-                <button
+                <a
                   className={twMerge(
                     "btn btn-primary w-full mt-[30px]",
                     inverse === true && "bg-white text-black"
                   )}
+                  href="#Contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#Contact");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                
                 >
                   {buttonText}
-                </button>
+                </a>
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature) => (
                     <li className="text-sm flex items-center gap-4">

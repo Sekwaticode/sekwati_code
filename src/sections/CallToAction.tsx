@@ -19,11 +19,11 @@ export const CallToAction = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-b from-white to-[#630330] py-24 overflow-x-clip"
+      className="bg-gradient-to-b from-[#B18197] to-[#630330] py-24 overflow-x-clip"
+      id="CallToAction"
     >
       <div className="container">
         <div className="section-heading relative">
-          <h2 className="section-title">Contact us Now</h2>
           <p className="section-description mt-5">
             Connect with customers who are actively seeking your services through expertly crafted web solutions tailored to your business goals!
           </p>

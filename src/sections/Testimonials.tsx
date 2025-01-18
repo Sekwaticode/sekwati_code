@@ -8,6 +8,9 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
+import avatar10 from "@/assets/avatar-10.png";
+import avatar11 from "@/assets/avatar-11.png";
+
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
@@ -34,7 +37,7 @@ const testimonials = [
   },
   {
     text: "We own a small beauty spa and needed a booking system that clients could use online. Sekwati-Code built an app that allows clients to select services, book appointments, and even pay deposits. The functionality has reduced no-shows and made managing schedules a breeze.",
-    imageSrc: avatar4.src,
+    imageSrc: avatar11.src,
     name: "Kgopotso Mahlangu",
     businessName: "Pretty Chilled",
   },
@@ -46,7 +49,7 @@ const testimonials = [
   },
   {
     text: "We’re a family-run tiling company and knew nothing about websites. Sekwati-Code built a beautiful, functional site that perfectly highlights our past projects. They patiently guided us through the process and provided invaluable advice. We’ve already seen an increase in inquiries from new customers thanks to the site.",
-    imageSrc: avatar6.src,
+    imageSrc: avatar4.src,
     name: "Bongani Ndlovu",
     businessName: "Floored Geometrics",
   },
@@ -58,14 +61,14 @@ const testimonials = [
   },
   {
     text: "Sekwati-Code transformed our small plumbing business's online presence. We needed a straightforward website to showcase our services, and they delivered beyond expectations. The design is clean, professional, and exactly what we envisioned. Our clients love the simplicity and ease of navigation. Working with their team was seamless, and they were always responsive to our feedback.",
-    imageSrc: avatar8.src,
+    imageSrc: avatar9.src,
     name: "Sam Dawson",
     businessName: "Daws on Demand",
   },
   {
     text: "Sekwati-Code designed a simple yet effective website for our solar panel installation business. The site perfectly showcases our services and highlights our eco-friendly mission. It's clean, easy to navigate, and mobile-friendly, which has been great for customers on the go. Since launching, we've seen a noticeable increase in inquiries. The team was professional, responsive, and delivered on time.",
-    imageSrc: avatar9.src,
-    name: "Phumi Sikhosana",
+    imageSrc: avatar10.src,
+    name: "Philile Sikhosana",
     businessName: "Connect Electrical and Projects",
   },
 ];
@@ -122,7 +125,7 @@ const TestimonialsColumn = (props: {
 
 export const Testimonials = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white" id="Testimonials">
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">
