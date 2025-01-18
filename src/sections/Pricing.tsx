@@ -112,7 +112,7 @@ export const Pricing = () => {
           </h2>
           <p className="section-description mt-5">
             Our pricing is designed to suit businesses of all sizes, offering
-            flexible options without compromising on quality. Whether you're
+            flexible options without compromising on quality. Whether you are
             starting with a simple landing page or require a feature-rich
             solution, we ensure you get exceptional value tailored to your
             needs. At Sekwati-Code, transparency is key—no hidden fees, just
@@ -130,6 +130,7 @@ export const Pricing = () => {
               features,
             }) => (
               <div
+              key={title}
                 className={twMerge(
                   "card",
                   inverse === true && "border-black bg-black text-white"
@@ -190,7 +191,7 @@ export const Pricing = () => {
                 </a>
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature) => (
-                    <li className="text-sm flex items-center gap-4">
+                    <li key={feature} className="text-sm flex items-center gap-4">
                       <CheckIcon className="h-6 w-6" />
                       <span>{feature}</span>
                     </li>
