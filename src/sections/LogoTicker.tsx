@@ -1,10 +1,11 @@
 "use client";
-import acmeLogo from "@/assets/logo-acme.png";
-import quantumLogo from "@/assets/logo-quantum.png";
-import echoLogo from "@/assets/logo-echo.png";
-import celestialLogo from "@/assets/logo-celestial.png";
-import pulseLogo from "@/assets/logo-pulse.png";
-import apexLogo from "@/assets/logo-apex.png";
+import landingPageLogo from "@/assets/logo-landing_pages.png";
+import businessWebLogo from "@/assets/logo-business_websites.png";
+import ecommerceLogo from "@/assets/logo-e_commerce.png";
+import bookingPlatformsLogo from "@/assets/logo_booking_platforms.png";
+import fullStackLogo from "@/assets/logo-full_stack.png";
+import whatsappLogo from "@/assets/logo_whatsapp_integration.png";
+import onlinePaymentLogo from '@/assets/logo-online_payment.png'
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -26,65 +27,75 @@ export const LogoTicker = () => {
             }}
           >
             <Image
-              src={acmeLogo}
-              alt="Acme Logo"
+              src={landingPageLogo}
+              alt="Landing Pages Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={quantumLogo}
-              alt="Quantum Logo"
+              src={businessWebLogo}
+              alt="Business Web Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={echoLogo}
-              alt="Echo Logo"
+              src={ecommerceLogo}
+              alt="E-Commerce Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={celestialLogo}
-              alt="Celestial Logo"
+              src={bookingPlatformsLogo}
+              alt="Booking Platform Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={pulseLogo}
-              alt="Pulse Logo"
+              src={fullStackLogo}
+              alt="Full Stack Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={apexLogo}
-              alt="Apex Logo"
+              src={whatsappLogo}
+              alt="Whatsapp Logo"
+              className="logo-ticker-image"
+            />
+             <Image
+              src={onlinePaymentLogo}
+              alt="Online Payment Logo"
               className="logo-ticker-image"
             />
 
             {/* Second set of logos for animation */}
             <Image
-              src={acmeLogo}
-              alt="Acme Logo"
+              src={landingPageLogo}
+              alt="Landing Pages Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={quantumLogo}
-              alt="Quantum Logo"
+              src={businessWebLogo}
+              alt="Business Web Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={echoLogo}
-              alt="Echo Logo"
+              src={ecommerceLogo}
+              alt="E-Commerce Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={celestialLogo}
-              alt="Celestial Logo"
+              src={bookingPlatformsLogo}
+              alt="Booking Platform Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={pulseLogo}
-              alt="Pulse Logo"
+              src={fullStackLogo}
+              alt="Full Stack Logo"
               className="logo-ticker-image"
             />
             <Image
-              src={apexLogo}
-              alt="Apex Logo"
+              src={whatsappLogo}
+              alt="Whatsapp Logo"
+              className="logo-ticker-image"
+            />
+              <Image
+              src={onlinePaymentLogo}
+              alt="Online Payment Logo"
               className="logo-ticker-image"
             />
           </motion.div>
