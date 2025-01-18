@@ -13,8 +13,8 @@ export const CallToAction = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateY = useTransform(scrollYProgress, [0,2], [150, -150]);
-  const translateX = useTransform(scrollYProgress, [0,3], [150, -150]);
+  const translateY = useTransform(scrollYProgress, [0, 2], [150, -150]);
+  const translateX = useTransform(scrollYProgress, [0, 3], [150, -150]);
 
   return (
     <section
@@ -25,7 +25,9 @@ export const CallToAction = () => {
       <div className="container">
         <div className="section-heading relative">
           <p className="section-description mt-5">
-            Connect with customers who are actively seeking your services through expertly crafted web solutions tailored to your business goals!
+            Connect with customers who are actively seeking your services
+            through expertly crafted web solutions tailored to your business
+            goals!
           </p>
           <motion.img
             src={rocketImage.src}
@@ -47,10 +49,22 @@ export const CallToAction = () => {
           />
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <button className="btn btn-primary">Enquire Now</button>
+          <a
+            href="#Contact"
+            onClick={(e) => {
+              e.preventDefault();
+              const target = document.querySelector("#Contact");
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
+          >
+            Enquire Now!{" "}
+          </a>{" "}
           <button className="btn btn-text gap-1">
-            <span>Learn more</span>
-            <ArrowRight className="h-5 w-5" />
+            {/* <span>Learn more</span> */}
+            {/* <ArrowRight className="h-5 w-5" /> */}
           </button>
         </div>
       </div>
