@@ -4,26 +4,10 @@ import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 
 const pricingTiers = [
-  {
-    title: "Simple Landing Page",
-    monthlyPrice: 2000,
-    buttonText: "Enquire Now!",
-    premium: false,
-    inverse: false,
-    features: [
-      "Home",
-      "About",
-      "Products/Services",
-      "Testimonials",
-      "Whatsapp Button",
-      "Google Frame",
-      "Domain with Business Emails",
-      "Basic SEO",
-    ],
-  },
+
   {
     title: "Enterprise Website",
-    monthlyPrice: 3200,
+    monthlyPrice: 5000,
     buttonText: "Enquire Now!",
     premium: false,
     inverse: true,
@@ -45,7 +29,7 @@ const pricingTiers = [
   },
   {
     title: "E-Commerce Site",
-    monthlyPrice: 5500,
+    monthlyPrice: 10000,
     buttonText: "Enquire Now!",
     premium: false,
     inverse: false,
@@ -72,7 +56,7 @@ const pricingTiers = [
   },
   {
     title: "Booking Website",
-    monthlyPrice: 12000,
+    monthlyPrice: 20000,
     buttonText: "Enquire Now!",
     premium: true,
     inverse: true,

@@ -1,14 +1,12 @@
 "use client";
 import ArrowIcon from "@/assets/arrow-right.svg";
 import planetImage from "@/assets/planet-removebg-preview.png";
-import cylinderImage from "@/assets/cylinder.png";
+// import cylinderImage from "@/assets/astronaut.png";
 import balloonIcon from "@/assets/astronaut-falling.png";
-import Image from "next/image";
 import {
   motion,
   useScroll,
   useTransform,
-  useMotionValueEvent,
 } from "framer-motion";
 import { useRef } from "react";
 
