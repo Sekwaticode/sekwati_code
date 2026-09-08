@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 import { twMerge } from "tailwind-merge";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sekwaticode | Web Development for Businesses",
-  description: "Web Solution Service for landing pages, websites, e-commerce sites and application development",
+  description:
+    "Web Solution Service for landing pages, websites, e-commerce sites and application development",
 };
 
 export default function RootLayout({
@@ -20,6 +22,7 @@ export default function RootLayout({
       <body className={twMerge(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
       </body>
+      <Script src="https://cdn.jotfor.ms/agent/embedjs/01a0820926e8700085d1b03fd067189948c2/embed.js" />
     </html>
   );
 }
