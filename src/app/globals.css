@@ -39,3 +39,28 @@
     @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
   }
 }
+
+/* shadcn/ui colour tokens, matched to the SekwatiCode palette */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 229 97% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 229 97% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 229 97% 12%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 228 82% 96%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 228 82% 96%;
+    --muted-foreground: 229 20% 40%;
+    --accent: 331 32% 90%;
+    --accent-foreground: 331 94% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 87%;
+    --input: 0 0% 87%;
+    --ring: 331 94% 20%;
+  }
+}

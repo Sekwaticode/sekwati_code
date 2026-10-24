@@ -21,7 +21,7 @@ export const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#630330,#EAEEFE_100%)] overflow-x-clip"
+      className="pt-8 pb-20 md:pt-5 md:pb-10 overflow-x-clip"
       id="Home"
     >
       <div className="container">
@@ -37,11 +37,11 @@ export const Hero = () => {
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <a
-                href="#Contact"
+                href="/contact"
                 onClick={(e) => {
-                  e.preventDefault();
                   const target = document.querySelector("#Contact");
                   if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({ behavior: "smooth" });
                   }
                 }}

@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export const LogoTicker = () => {
   return (
-    <div className="py-8 md:py-12 bg-white"
+    <div className="py-8 md:py-12"
     id="LogoTicker"
     >
       <div className="container">

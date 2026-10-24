@@ -19,7 +19,7 @@ export const CallToAction = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-b from-[#B18197] to-[#630330] py-24 overflow-x-clip"
+      className="py-24 overflow-x-clip"
       id="CallToAction"
     >
       <div className="container">
@@ -50,11 +50,11 @@ export const CallToAction = () => {
         </div>
         <div className="flex gap-2 mt-10 justify-center">
           <a
-            href="#Contact"
+            href="/contact"
             onClick={(e) => {
-              e.preventDefault();
               const target = document.querySelector("#Contact");
               if (target) {
+                e.preventDefault();
                 target.scrollIntoView({ behavior: "smooth" });
               }
             }}

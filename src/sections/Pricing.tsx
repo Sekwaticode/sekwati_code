@@ -86,7 +86,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white"
+    <section className="py-24"
     id="Pricing"
     >
       <div className="container">
@@ -161,11 +161,11 @@ export const Pricing = () => {
                     "btn btn-primary w-full mt-[30px]",
                     inverse === true && "bg-white text-black"
                   )}
-                  href="#Contact"
+                  href="/contact"
                   onClick={(e) => {
-                    e.preventDefault();
                     const target = document.querySelector("#Contact");
                     if (target) {
+                      e.preventDefault();
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export const Header = () => {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
@@ -17,14 +19,13 @@ export const Header = () => {
           Premium Web Solutions Tailored to Your Business Needs
         </p>
         <div className="inline-flex gap-1 items-center">
-          <a
-            href="#Contact"
-            className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] 
+          <Link
+            href="/contact"
+            className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)]
                        [background-size:200%] text-transparent bg-clip-text font-medium"
-            onClick={(e) => handleSmoothScroll(e, "#Contact")}
           >
             Contact Now
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -33,17 +34,16 @@ export const Header = () => {
         <div className="container">
           <div className="flex items-center justify-between">
             <nav className="hidden md:flex gap-6 text-black/60 items-center" role="navigation">
-              <a href="#Home" onClick={(e) => handleSmoothScroll(e, "#Home")}>Home</a>
-              <a href="#About" onClick={(e) => handleSmoothScroll(e, "#About")}>About</a>
-              <a href="#Pricing" onClick={(e) => handleSmoothScroll(e, "#Pricing")}>Pricing</a>
-              <a href="#Testimonials" onClick={(e) => handleSmoothScroll(e, "#Testimonials")}>Testimonials</a>
-              <a 
-                href="#Contact"
-                onClick={(e) => handleSmoothScroll(e, "#Contact")}
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+              <Link href="/services">Services &amp; Pricing</Link>
+              <Link href="/testimonials">Testimonials</Link>
+              <Link
+                href="/contact"
                 className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
               >
                 Contact
-              </a>
+              </Link>
               <a href="#Footer" onClick={(e) => handleSmoothScroll(e, "#Footer")}>Footer</a>
             </nav>
           </div>

@@ -6,7 +6,8 @@ import { Pricing } from "@/sections/Pricing";
 import { Testimonials } from "@/sections/Testimonials";
 import { CallToAction } from "@/sections/CallToAction";
 import { Footer } from "@/sections/Footer";
-import FormToWhatsApp from "@/sections/FormToWhatsApp"; // Adjust path based on file location
+import Contact from "@/components/ui/contact-01";
+import FAQs from "@/components/ui/faqs-component";
 
 
 export default function Home() {
@@ -18,7 +19,8 @@ export default function Home() {
       <ProductShowcase />
       <Pricing />
       <Testimonials />
-      <FormToWhatsApp/>
+      <FAQs />
+      <Contact />
       <CallToAction />
       <Footer />
     </>
